@@ -1,0 +1,32 @@
+.cards{
+    width: 400px;
+    height: auto;
+}
+.principale{
+   display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    gap: 5px;
+    grid-auto-columns: minmax(150px, auto);
+    grid-auto-flow: row;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    color: #333;
+    transition: background-color 0.3s ease;
+    scrollbar-color: #F5F5F5 #E0E0E0;
+    margin: 20px;
+    overflow-y: hidden; /* Pas de défilement vertical par défaut */
+    overflow-x: hidden;
+
+}
+
+/* Personnalisation de la scrollbar */
+.principale::-webkit-scrollbar {
+    height: 10px;
+}
+.principale::-webkit-scrollbar-thumb {
+    background-color: #333; /* Couleur du curseur */
+    border-radius: 5px;
+}
+.principale::-webkit-scrollbar-track {
+    background-color: #f5f5f5; /* Couleur de l'arrière-plan */
+}
